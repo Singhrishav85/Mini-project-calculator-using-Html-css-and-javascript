@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project calculator</title>
+    <link rel="stylesheet" href="miniproject.css" />
+  </head>
+  <body>
+    <h1>Mini Project Calculator</h1>
+    <div id="calculator">
+      <div id="answer">Answer</div>
+      <div id="main">
+        <input
+          type="text"
+          placeholder="First no"
+          class="first_input"
+          id="first"
+          required
+          minlength="0"
+          maxlength="10"
+        />
+        <input
+          type="text"
+          placeholder="Second no"
+          class="first_input"
+          id="second"
+          required
+          minlength="0"
+          maxlength="10"
+        />
+      </div>
+      <div id="main_add_sub" class="arithmetic">
+        <div id="first_input" onclick="add()" class="add_sub">Add(+)</div>
+        <div id="first_input" onclick="sub()" class="add_sub">Sub(-)</div>
+      </div>
+      <div id="main_mult_divide" class="arithmetic">
+        <div id="first_input" onclick="multiply()" class="mult_divide">
+          Multi(X)
+        </div>
+        <div id="first_input" onclick="divide()" class="mult_divide">
+          Divide(/)
+        </div>
+      </div>
+      <div id="main_reminder_reset" class="arithmetic">
+        <div id="first_input" onclick="reminder()" class="reminder_reset">
+          Reminder(%)
+        </div>
+        <div id="first_input" onclick="reset()" class="reminder_reset">
+          Reset
+        </div>
+      </div>
+    </div>
+    <script src="miniproject.js"></script>
+  </body>
+</html>
